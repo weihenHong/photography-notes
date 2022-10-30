@@ -1,0 +1,2 @@
+# photography-notes
+photography notes
