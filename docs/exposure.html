@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" data-color-mode="dark">
+<head>
+<meta charset="utf-8">
+<title>曝光的三要素：快门、光圈、感光度
+ &#x26;  exposure cheatsheet &#x26;  Quick Reference</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta description="快门、光圈、感光度的工作原理及使用技巧为开发人员分享快速参考备忘单。">
+<meta keywords="Quick,Reference,cheatsheet,exposure">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%221em%22%20width%3D%221em%22%3E%20%3Cpath%20d%3D%22m21.66%2010.44-.98%204.18c-.84%203.61-2.5%205.07-5.62%204.77-.5-.04-1.04-.13-1.62-.27l-1.68-.4c-4.17-.99-5.46-3.05-4.48-7.23l.98-4.19c.2-.85.44-1.59.74-2.2%201.17-2.42%203.16-3.07%206.5-2.28l1.67.39c4.19.98%205.47%203.05%204.49%207.23Z%22%20fill%3D%22%23c9d1d9%22%2F%3E%20%3Cpath%20d%3D%22M15.06%2019.39c-.62.42-1.4.77-2.35%201.08l-1.58.52c-3.97%201.28-6.06.21-7.35-3.76L2.5%2013.28c-1.28-3.97-.22-6.07%203.75-7.35l1.58-.52c.41-.13.8-.24%201.17-.31-.3.61-.54%201.35-.74%202.2l-.98%204.19c-.98%204.18.31%206.24%204.48%207.23l1.68.4c.58.14%201.12.23%201.62.27Zm2.43-8.88c-.06%200-.12-.01-.19-.02l-4.85-1.23a.75.75%200%200%201%20.37-1.45l4.85%201.23a.748.748%200%200%201-.18%201.47Z%22%20fill%3D%22%23228e6c%22%20%2F%3E%20%3Cpath%20d%3D%22M14.56%2013.89c-.06%200-.12-.01-.19-.02l-2.91-.74a.75.75%200%200%201%20.37-1.45l2.91.74c.4.1.64.51.54.91-.08.34-.38.56-.72.56Z%22%20fill%3D%22%23228e6c%22%20%2F%3E%20%3C%2Fsvg%3E" type="image/svg+xml">
+<link rel="stylesheet" href="../style/style.css">
+</head>
+<body><nav class="header-nav"><div class="max-container"><a href="../index.html" class="logo"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em">
+  <path d="m21.66 10.44-.98 4.18c-.84 3.61-2.5 5.07-5.62 4.77-.5-.04-1.04-.13-1.62-.27l-1.68-.4c-4.17-.99-5.46-3.05-4.48-7.23l.98-4.19c.2-.85.44-1.59.74-2.2 1.17-2.42 3.16-3.07 6.5-2.28l1.67.39c4.19.98 5.47 3.05 4.49 7.23Z" fill="#c9d1d9"></path>
+  <path d="M15.06 19.39c-.62.42-1.4.77-2.35 1.08l-1.58.52c-3.97 1.28-6.06.21-7.35-3.76L2.5 13.28c-1.28-3.97-.22-6.07 3.75-7.35l1.58-.52c.41-.13.8-.24 1.17-.31-.3.61-.54 1.35-.74 2.2l-.98 4.19c-.98 4.18.31 6.24 4.48 7.23l1.68.4c.58.14 1.12.23 1.62.27Zm2.43-8.88c-.06 0-.12-.01-.19-.02l-4.85-1.23a.75.75 0 0 1 .37-1.45l4.85 1.23a.748.748 0 0 1-.18 1.47Z" fill="#228e6c"></path>
+  <path d="M14.56 13.89c-.06 0-.12-.01-.19-.02l-2.91-.74a.75.75 0 0 1 .37-1.45l2.91.74c.4.1.64.51.54.91-.08.34-.38.56-.72.56Z" fill="#228e6c"></path>
+</svg>
+<span class="title">photography-notes</span></a><div class="menu"><button id="darkMode" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="light" height="1em" width="1em">
+  <path d="M6.995 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007-2.246-5.007-5.007-5.007S6.995 9.239 6.995 12zM11 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2H2zm17 0h3v2h-3zM5.637 19.778l-1.414-1.414 2.121-2.121 1.414 1.414zM16.242 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.344 7.759 4.223 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"></path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="dark" height="1em" width="1em">
+  <path d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"></path>
+</svg>
+</button><script>
+  const LOCAL_NANE = '_dark_mode_theme_'
+  const rememberedValue = localStorage.getItem(LOCAL_NANE);
+  if (rememberedValue && ['light', 'dark'].includes(rememberedValue)) {
+    document.documentElement.setAttribute('data-color-mode', rememberedValue);
+  }
+  const button = document.querySelector('#darkMode');
+  button.onclick = () => {
+    const theme = document.documentElement.dataset.colorMode;
+    const mode = theme === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-color-mode', mode);
+    localStorage.setItem(LOCAL_NANE, mode);
+  }
+</script><a href="https://github.com/weihenHong/photography-notes/" class="" target="__blank"><svg viewBox="0 0 16 16" fill="currentColor" height="1em" width="1em"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a></div></div></nav><div class="wrap max-container"><header class="wrap-header h1wrap"><h1 id="曝光的三要素快门光圈感光度"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+  <path d="M107.946667 838.4l57.173333 23.893333v-385.28l-103.68 250.026667c-17.493333 43.52 3.413333 93.44 46.506667 111.36z m832-157.866667L728.32 169.813333a85.888 85.888 0 0 0-77.226667-52.48c-11.093333 0-22.613333 1.706667-33.706666 6.4L302.933333 253.866667a85.290667 85.290667 0 0 0-46.08 110.933333l211.626667 510.72a85.248 85.248 0 0 0 110.933333 46.08l314.026667-130.133333a85.077333 85.077333 0 0 0 46.506667-110.933334zM336.213333 373.333333c-23.466667 0-42.666667-19.2-42.666666-42.666666s19.2-42.666667 42.666666-42.666667 42.666667 19.2 42.666667 42.666667-19.2 42.666667-42.666667 42.666666z m-85.333333 469.333334c0 46.933333 38.4 85.333333 85.333333 85.333333h61.866667l-147.2-355.84v270.506667z"></path>
+</svg><a aria-hidden="true" tabindex="-1" href="#曝光的三要素快门光圈感光度"><span class="icon icon-link"></span></a>曝光的三要素：快门、光圈、感光度</h1><div class="wrap-body">
+<p>快门、光圈、感光度的工作原理及使用技巧</p>
+<hr>
+</div></header><div class="menu-tocs"><div class="menu-btn"><svg aria-hidden="true" fill="currentColor" height="1em" width="1em" viewBox="0 0 16 16" version="1.1" data-view-component="true">
+  <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+</svg></div><div class="menu-modal"><a aria-hidden="true" class="leve3 tocs-link" href="#快门">快门</a><a aria-hidden="true" class="leve2 tocs-link" href="#"> </a><a aria-hidden="true" class="leve3 tocs-link" href="#光圈">光圈</a><a aria-hidden="true" class="leve3 tocs-link" href="#感光度">感光度</a><a aria-hidden="true" class="leve3 tocs-link" href="#总结">总结</a></div></div><div class="h1wrap-body"><div class="wrap"><div class="wrap-header h3wrap"><h3 id="快门"><a aria-hidden="true" tabindex="-1" href="#快门"><span class="icon icon-link"></span></a>快门</h3><div class="wrap-body">
+<ul>
+<li>快门的工作原理</li>
+</ul>
+<p>快门是照相机用来控制感光元件有效曝光时间的机构。打个比方，快门就像是水龙头的阀门，光线就是水。水龙头的阀门打开的时间越长，流出的水就越多。同理，快门打开的时间越久，相机感光元件获得的光线就越多。
+快门速度单位是"秒"。专业135相机的最高快门速度达到1/16000秒。常见的快门速度有:1 1/2 1/4 1/8 1/15 1/30 1/60 1/125 1/250 1/500 1/1000 1/2000等。相邻两级的快门速度的曝光量相差一倍，我们常说相差一级。如1/60秒比1/125秒的曝光量多一倍，即1/60秒比1/125秒速度慢一级或称低一级。</p>
+</div></div><div class="h3wrap-body"><div class="wrap"><div class="wrap-header h2wrap"><h2 id=""><a aria-hidden="true" tabindex="-1" href="#"><span class="icon icon-link"></span></a><img src="https://gitee.com/hong_weishen/gitee-chart-bed/raw/master/0.gif" alt="快门的工作过程"></h2><div class="wrap-body">
+<ul>
+<li>
+<p>快门应用技巧(快门的作用就是控制曝光时间，我们利用曝光时间，可以拍摄一些特殊的效果。)</p>
+<ul>
+<li><strong>快门速度应该怎么计算？</strong> 经过长期摄影师们的不断摸索，逐渐形成了一个经验，就是快门速度最低不能低于正在使用焦段的倒数。比如，我们正在使用50mm焦距拍摄，那么快门速度则不能低于1/50s。这只是针对拍摄静止物体的一个经验，不是绝对。现在很多镜头带有防抖功能，快门速度可以适当降低。如果你的手很稳，低一点的快门速度也是可以的。</li>
+<li><strong>高速快门凝固瞬间。</strong> 如果我们拍摄快速运动的物体，比如体育赛事，飞翔的鸟，爱动的儿童等，我们需要使用高速快门，这样才能拍摄出清晰的图像。一般来说，1/250S的快门速度就算是高速快门了，可以清晰记录运动较慢的物体，如果物体运动较快，则根据现场情况，提高快门速度。1/1000S可以拍摄行驶中的汽车。</li>
+<li><strong>低速快门创造轨迹。 光线昏暗的时候，</strong> 使用低速快门在除了可以获得正确的曝光， <strong>对运动的发光体，</strong> 还可以形成漂亮的轨迹。 <strong>拍摄瀑布的时候，</strong> 低速快门可以拍出丝绸般的质感。 <strong>拍摄水面，</strong> 一般也会使用低速快门，可以让水面像镜子般一样平静。</li>
+</ul>
+</li>
+</ul>
+<hr>
+</div></div></div></div></div><div class="wrap"><div class="wrap-header h3wrap"><h3 id="光圈"><a aria-hidden="true" tabindex="-1" href="#光圈"><span class="icon icon-link"></span></a>光圈</h3><div class="wrap-body">
+<ul>
+<li>光圈的工作原理
+光圈是一个用来控制光线透过镜头，进入机身内感光面光量的装置，它通常是在镜头内。还是用水龙头来打比方，水龙头的阀门开的越大，单位时间流出的水就多。同理，光圈越大，单位时间进入的光量就越多。<strong>值得注意的是，光圈值越大，光圈实际就越小，单位时间进光量就越小。</strong>
+<img src="https://gitee.com/hong_weishen/gitee-chart-bed/raw/master/641.webp" alt="光圈"></li>
+<li>光圈的使用技巧
+光圈除了影响进光量之外，还是影响景深的主要因素。光圈小(光圈值大)，景深深，光圈大(光圈值小)，景深浅
+<ul>
+<li><strong>景深是什么？</strong> 景深，是指在摄影机镜头或其他成像器前沿能够取得清晰图像的成像所测定的被摄物体前后距离范围。通俗的讲，被摄体在景深范围内成像就是清晰的，在景深范围外就是模糊的。</li>
+<li><strong>光圈大小影响景深大小，</strong> 而景深大小可以帮助我们控制图片虚化效果，把背景、无关元素虚化掉，突出主体。</li>
+<li>实际应用中，<strong>以人像、鸟类、动物为主体，占据画面大部分内容的，通常使用大光圈，获得虚化背景的效果，从而突出主体。而拍摄风景类的，一般使用小光圈，让画面的前景、中景、远景都清晰。</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<!--rehype:body-class=cols-2-->
+</div></div></div><div class="wrap"><div class="wrap-header h3wrap"><h3 id="感光度"><a aria-hidden="true" tabindex="-1" href="#感光度"><span class="icon icon-link"></span></a>感光度</h3><div class="wrap-body">
+<ul>
+<li>感光度的工作原理
+感光元件的感光度越高，吸收光线的能力就越强。</li>
+<li>感光度的使用技巧
+感光度实际上是没有什么使用技巧的，能不提高感光度就不提。但是很多时候，光线不理想，为了获得正常曝光，我们手头又没有三脚架等固定设备，或者为了获得比较快的快门速度，我们只能提高感光度。这时候，拍到比拍好要重要。</li>
+</ul>
+</div></div></div><div class="wrap"><div class="wrap-header h3wrap"><h3 id="总结"><a aria-hidden="true" tabindex="-1" href="#总结"><span class="icon icon-link"></span></a>总结</h3><div class="wrap-body">
+<p>光圈就是维护秩序的门童，控制多少光线可以进入。快门就是管家，在大厅控制光线进来的时间，感光元件就是主人，负责接收光线。三者互相搭配，才能获得曝光正常的照片。
+<img src="https://gitee.com/hong_weishen/gitee-chart-bed/raw/master/641%20(1).webp" alt="光圈"></p>
+<p><strong>现在数码相机，都有自动程序，</strong> 三者的数值由相机自动计算分配，一般都可以获得正常曝光。尤其是新接触摄影或者单反相机的，对这三者的控制都是交由相机来代劳。<strong>拍人像时，</strong> 我们可以使用<strong>光圈优先模式</strong>，设定大光圈，相机会自动匹配相应的快门速度和感光度。拍摄赛事时，使用快门优先模式，设定较高速度的快门，相机就会自动匹配相应的光圈和感光度。
+<strong>光圈优先、快门优先都是相机的半自动程序，设置其中一个参数就可以。如果使用全手动M档，根据实际拍摄场景，手动设置相机的快门、光圈、感光度。相机都有曝光标尺，可以用来参考我们设置的参数是否可以获得正确曝光。</strong></p>
+</div></div></div></div></div><footer class="footer-wrap"><footer class="max-container"></footer></footer><script>
+if(('onhashchange' in window) && ((typeof document.documentMode==='undefined') || document.documentMode==8)) {
+  window.onhashchange = function () {
+    anchorPoint()
+    updateAnchor()
+  };
+}
+function anchorPoint() {
+  const hash = window.location.hash?.replace(/^#/, '') || '';
+  const elm = document.getElementById(decodeURIComponent(hash));
+  Array.from(document.querySelectorAll('.h2wrap-body .wrap')).forEach((elm) => elm.classList.remove('active'))
+  if (elm?.tagName === 'H3') {
+    elm?.parentElement?.parentElement?.classList.add('active');
+    const box = elm?.parentElement?.parentElement;
+    console.log('elm:2', box, document.querySelectorAll('.h2wrap-body .wrap'))
+  }
+}
+anchorPoint();
+
+function updateAnchor(element) {
+  const anchorContainer = document.querySelectorAll('.menu-tocs .menu-modal a.tocs-link');
+  anchorContainer.forEach((tocanchor) => {
+    tocanchor.classList.remove('is-active-link');
+  });
+  const anchor = element || document.querySelector(`a.tocs-link[href='${decodeURIComponent(window.location.hash)}']`);
+  console.log('anchor', anchor)
+  if (anchor) {
+    anchor.classList.add('is-active-link');
+  }
+}
+// toc 定位
+updateAnchor()
+const anchor = document.querySelectorAll('.menu-tocs .menu-modal a.tocs-link');
+anchor.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    updateAnchor()
+  })
+})
+</script></body>
+</html>
