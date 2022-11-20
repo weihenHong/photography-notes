@@ -7,17 +7,17 @@ const ICONS_PATH = path.resolve(process.cwd(), 'scripts/assets/quickreference.sv
 export function header({ homePath, githubURL = '' }) {
   const svgNode = getSVGNode(ICONS_PATH);
   const data = [
-    {
-      menu: true,
-      href: githubURL,
-      target: '__blank',
-      label: '编辑',
-      children: [editor],
-    },
+    // {
+    //   menu: true,
+    //   href: githubURL,
+    //   target: '__blank',
+    //   label: '编辑',
+    //   children: [editor],
+    // },
     ...darkMode(),
     {
       menu: true,
-      href: 'https://github.com/jaywcjlove/reference',
+      href: 'https://github.com/weihenHong/photography-notes/',
       target: '__blank',
       children: [github],
     },
@@ -51,7 +51,7 @@ export function header({ homePath, githubURL = '' }) {
                 properties: {
                   class: ['title'],
                 },
-                children: [{ type: 'text', value: 'Quick Reference' }],
+                children: [{ type: 'text', value: 'photography-notes' }],
               },
             ],
           },

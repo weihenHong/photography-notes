@@ -43,7 +43,7 @@ export const logo = [
     properties: {
       class: ['title'],
     },
-    children: [{ type: 'text', value: 'Quick Reference' }],
+    children: [{ type: 'text', value: 'photography-notes' }],
   },
 ];
 

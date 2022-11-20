@@ -1,4 +1,3 @@
-
 export function footer() {
   return {
     type: 'element',
@@ -14,9 +13,9 @@ export function footer() {
           class: ['max-container'],
         },
         children: [
-          { type: 'text', value: '© 2022 Kenny Wang, All rights reserved.' }
+          // { type: 'text', value: '© 2022 Kenny Wang, All rights reserved.' }
         ],
-      }
+      },
     ],
   };
 }
